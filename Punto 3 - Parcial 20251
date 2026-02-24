@@ -1,0 +1,17 @@
+from random import random
+
+n=1000
+data=[]
+for i in range(n):  
+    data.append(random())
+
+def pNorm (data, p):
+    p_norm1= 0
+    for x in data:
+        p_norm = abs(x)**p
+        p_norm1 += p_norm
+        
+    return p_norm1**(1/p)   
+
+p=int(input('Ingrese el valor de p: '))
+print(f'La norma-p es: {pNorm(data,p)}')

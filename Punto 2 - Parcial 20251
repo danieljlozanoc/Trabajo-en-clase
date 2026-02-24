@@ -1,0 +1,12 @@
+from random import random
+def maxValue(l):
+  max=0
+  for v in l:
+    if v>max:
+      max=v
+  return max
+n=1000
+data=[]
+for i in range(n):
+  data.append(random())
+print(f'El valor máximo es: {maxValue(data)}')

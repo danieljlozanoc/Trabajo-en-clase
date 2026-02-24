@@ -1,0 +1,8 @@
+def multTable(k):
+    r=[]
+    for n in range(10):
+        r.append(k*(n+1))
+    return r
+
+n = int(input('Enter the number for multiplication table: '))
+print(f'Multiplication table of {n} is {multTable(n)}')
